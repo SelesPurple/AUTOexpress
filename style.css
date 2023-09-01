@@ -6,10 +6,12 @@
 * h1 {
   font-weight: 400;
   font-size: 72px;
+  text-transform: uppercase;
 }
 * h2 {
   font-weight: 400;
   font-size: 36px;
+  text-transform: uppercase;
 }
 * h3 {
   font-size: 24px;
@@ -19,4 +21,28 @@
 }
 * button {
   font-size: 18px;
+}
+
+body {
+  color: #ffffff;
+  background: #21062A;
+}
+body .main-page {
+  background: url(img/main-page_background.png);
+  background-size: 100%;
+}
+body .main-page .main-page__text-block {
+  padding: 50px 200px;
+  height: 700px;
+}
+body .main-page .main-page__text-block .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
 }
