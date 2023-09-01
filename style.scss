@@ -27,7 +27,16 @@ $black: #2C2B2B;
         font-size: 16px;
     }
     button {
-        font-size: 18px;
+        font-size: 14px;
+        text-transform: uppercase;
+        width: 250px;
+        height: 50px;
+        background-color: $accent;
+        color: $white;
+        &:hover {
+            background-color: $white;
+            color: $accent;
+        }
     }
 }
 body {
@@ -36,6 +45,7 @@ body {
     .main-page {
         background: url(img/main-page_background.png);
         background-size: 100%;
+        position: relative;
         .main-page__text-block {
             padding: 50px 200px;
             height: 700px;
@@ -43,8 +53,24 @@ body {
                 display: flex;
                 justify-content: space-between;
                 align-items: end;
+                margin-bottom: 100px;
+            }
+            .main-block__description {
+                li {
+                    padding: 30px 0;
+                    &:last-child {
+                        padding-top: 200px;
+                    }
+                }
+                
+                
             }
         }
+        /* img:last-child {
+            position: absolute;
+            right: 100px;
+            bottom: 30px;
+        } */
         
     }
 }
