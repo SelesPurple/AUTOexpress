@@ -22,9 +22,11 @@ $black: #2C2B2B;
     }
     h3 {
         font-size: 24px;
+        font-weight: 300;
     }
     p {
-        font-size: 16px;
+        font-size: 18px;
+        line-height: 26.68px;
     }
     button {
         font-size: 14px;
@@ -40,15 +42,21 @@ $black: #2C2B2B;
     }
 }
 body {
-    color: $white;
-    background: $branded;
     .main-page {
-        background: url(img/main-page_background.png);
-        background-size: 100%;
+        color: $white;
+        background: $branded;
+        background-image: url('img/main-page_background.png');
+        background-position: bottom;
+        height: 700px;
         position: relative;
+        .auto-img {
+            position: absolute;
+            right: 170px;
+            top: 400px;
+        }
         .main-page__text-block {
             padding: 50px 200px;
-            height: 700px;
+
             .head {
                 display: flex;
                 justify-content: space-between;
@@ -57,13 +65,21 @@ body {
             }
             .main-block__description {
                 li {
-                    padding: 30px 0;
+                    padding: 20px 0;
+                    &:first-child {
+                        padding: 5px;
+                    }
                     &:last-child {
-                        padding-top: 200px;
+                        padding-top: 30px;
                     }
                 }
-                
-                
+            }
+            .main-block__social-network {
+                width: 300px;
+                padding: 40px 50px;
+                a {
+                    padding: 5px;
+                }
             }
         }
         /* img:last-child {
@@ -72,5 +88,54 @@ body {
             bottom: 30px;
         } */
         
+    }
+    h2.services {
+        padding: 300px 0 0 200px;
+    }
+    .services {
+       
+        color: $black;
+        padding: 50px 200px;
+        display: flex;
+        .text-block {
+            width: 600px;
+            padding-right: 50px;
+            margin-bottom: 50px;
+        }
+      
+        ul {
+            
+            li {
+                h2 {
+                    color: $grey;
+                    transform: rotate(-90deg);
+                    padding-top: 10px;
+                }
+                display: flex;
+
+        
+                width: 450px;
+                height: 75px;
+                border: 1px solid $grey;
+                padding: 0 30px;
+                margin: 10px 0;
+                .li-text {
+                    padding-left: 30px;
+                    padding-top: 10px;
+                }
+                &:hover {
+                    h2 {
+                        color: $accent;
+                    }
+                    border-color: $accent;
+                    width: 500px;
+                }                
+            }
+        }
+    }
+    .services__text {
+    }
+
+    .li-text {
     }
 }
