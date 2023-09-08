@@ -101,19 +101,21 @@ body {
             width: 600px;
             padding-right: 50px;
             margin-bottom: 50px;
+            p.title {
+                color: $accent;
+            }
         }
       
         ul {
             
             li {
+               
                 h2 {
                     color: $grey;
                     transform: rotate(-90deg);
                     padding-top: 10px;
                 }
                 display: flex;
-
-        
                 width: 450px;
                 height: 75px;
                 border: 1px solid $grey;
