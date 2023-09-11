@@ -170,6 +170,24 @@ body {
         
         }
     }
+    .fitted-cars {
+        width: 1200px;
+        margin: 100px 200px;
+        .slider-box {
+            display: flex;
+            justify-content: center;
+            .slide {
+                .slide-img {
+                    min-width: 380px;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+   
+   
 
     
 }
