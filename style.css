@@ -84,7 +84,7 @@ body .main-page .main-page__text-block .main-block__social-network a {
   padding: 5px;
 }
 body h2.services {
-  padding: 300px 0 0 200px;
+  padding: 200px 0 0 200px;
 }
 body .services {
   color: #2C2B2B;
@@ -104,6 +104,9 @@ body .services .text-block p.title {
 }
 body .services .text-block p.indent {
   margin-bottom: 15px;
+}
+body .services ul {
+  margin-left: 100px;
 }
 body .services ul li {
   display: -webkit-box;
@@ -132,22 +135,22 @@ body .services ul li:hover {
 body .services ul li:hover h2 {
   color: #5A0D67;
 }
-body h2.why-me {
-  margin-bottom: 100px;
-  padding: 300px 0 0 200px;
-}
 body .why-we {
   width: 1194px;
   height: 606px;
-  margin: 50px 200px;
-  margin-top: 100px;
+  margin: 100px 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid red;
+}
+body .why-we h2.why-me {
+  margin: 0px 0 0 200px;
+}
+body .why-we .why-me__main {
+  margin-left: 280px;
 }
 body .why-me__auto-img {
-  margin-right: 50px;
+  margin-right: 100px;
 }
 body .why-me__decription {
   color: #ffffff;
@@ -157,5 +160,8 @@ body .why-me__decription {
 }
 body .why-me__decription .decription_point {
   width: 316px;
-  margin-left: 200px;
+  margin: 40px 0 0 200px;
+}
+body .why-me__decription .decription_point:first-child {
+  padding-top: 40px;
 }

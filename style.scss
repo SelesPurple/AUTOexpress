@@ -90,7 +90,7 @@ body {
         
     }
     h2.services {
-        padding: 300px 0 0 200px;
+        padding: 200px 0 0 200px;
     }
     .services {
        
@@ -111,6 +111,7 @@ body {
         }
       
         ul {
+            margin-left: 100px;
             
             li {
                
@@ -139,20 +140,21 @@ body {
             }
         }
     }
-    h2.why-me {
-        margin-bottom: 100px;
-        padding: 300px 0 0 200px;
-    }
+
     .why-we {
         width: 1194px;
         height: 606px;
-        margin: 50px 200px;
-        margin-top: 100px;
+        margin: 100px 200px;
         display: flex;
-        border: 1px solid red;
+        h2.why-me {
+            margin: 0px 0 0 200px;
+        }
+        .why-me__main {
+            margin-left: 280px;
+        }
     }
     .why-me__auto-img {
-        margin-right: 50px;
+        margin-right: 100px;
     }
     .why-me__decription {
         color: $white;
@@ -161,7 +163,11 @@ body {
         background-color: $branded;
         .decription_point {
             width: 316px;
-            margin-left: 200px;
+            margin: 40px 0 0 200px;
+            &:first-child {
+                padding-top: 40px;
+            }
+        
         }
     }
 
