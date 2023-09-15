@@ -204,7 +204,43 @@ body {
         }
     }
    
-   
+    .contacts {
+        display: flex;
+        .address {
+            h2 {
+                margin-bottom: 50px;
+            }
+            margin-right: 200px;
+            .address-block {
+                margin-bottom: 30px;
+                .title {
+                    color: $accent;
+                }
+            }
+        }
+        .app {
+            width: 600px;
+            height: 466px;
+            background-color: $branded;
+            color: $white;
+            display: flex;
+            flex-direction: column;
+            form {
+                display: flex;
+                flex-direction: column;
+                input {
+                    background-color: $branded;
+                    border: 1px solid $white;
+                    color: $white;
+                    width: 450px;
+                    height: 75px;
+                    margin-bottom: 15px ;
+                    
+                }
+            }
+        }
+    }
+
 
     
 }
