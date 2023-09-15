@@ -201,6 +201,7 @@ body .fitted-cars .slider-box .slide:hover {
   color: #ffffff;
 }
 body .contacts {
+  margin: 100px 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -209,9 +210,10 @@ body .contacts .address {
   margin-right: 200px;
 }
 body .contacts .address h2 {
-  margin-bottom: 50px;
+  margin: 50px 0;
 }
 body .contacts .address .address-block {
+  min-width: 174px;
   margin-bottom: 30px;
 }
 body .contacts .address .address-block .title {
@@ -229,6 +231,11 @@ body .contacts .app {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 70px;
+}
+body .contacts .app h2 {
+  text-align: center;
+  margin: 50px 0 30px 0;
 }
 body .contacts .app form {
   display: -webkit-box;
@@ -238,6 +245,9 @@ body .contacts .app form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 body .contacts .app form input {
   background-color: #21062A;
@@ -246,4 +256,24 @@ body .contacts .app form input {
   width: 450px;
   height: 75px;
   margin-bottom: 15px;
+  font-size: 20px;
+  padding: 30px 50px;
+}
+body .contacts .app form input::-webkit-input-placeholder {
+  text-align: center;
+}
+body .contacts .app form input::-moz-placeholder {
+  text-align: center;
+}
+body .contacts .app form input:-ms-input-placeholder {
+  text-align: center;
+}
+body .contacts .app form input::-ms-input-placeholder {
+  text-align: center;
+}
+body .contacts .app form input::placeholder {
+  text-align: center;
+}
+body .contacts .app form button {
+  margin-top: 70px;
 }
